@@ -3,6 +3,7 @@
   justify-content: space-around;
   align-items: center;
   height: 80px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .navegacao__logo {
   display: flex;
@@ -16,6 +17,7 @@
   color: #3A404E;
   font-size: 18px;
   font-weight: 500;
+  line-height: 24px;
 }
 .navegacao__link {
   display: flex;
@@ -45,6 +47,35 @@
   background-color: #8E2424;
   color: #FFFFFF;
   border: 1px #8E2424 solid;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 97px 0;
+  gap: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cabecalho__sobre {
+  font-size: 16px;
+  font-weight: 600;
+  color: #8E2424;
+}
+.cabecalho__titulo {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  color: #101828;
+}
+.cabecalho__texto {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #667085;
+  text-align: center;
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

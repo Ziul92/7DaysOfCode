@@ -10,6 +10,7 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
 }
 
 
+
 .navegacao {
   @include flex(space-around);
   height: 80px;
@@ -95,12 +96,12 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
 }
 
 .resultados {
-  @include flex(space-between);
+  @include flex(space-around);
   font-family: $tipoDeFonte;
-  padding-left: 70px;
+  padding-left: 20px;
+  margin-bottom: 96px;
 
   &__caixa {
-
 
 
     &--titulo {
@@ -126,5 +127,42 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
       color: $cinza;
       width: 280px;
     }
+  }
+}
+
+.vagas {
+  @include flex(center);
+  flex-direction: column;
+  font-family: $tipoDeFonte;
+  padding: 2em 0 0 0;
+
+  &__titulo {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 4px 12px;
+    color: $vermelho;
+    background-color: rgba(142, 36, 36, 0.05);
+    border-radius: 30px;
+  }
+
+  &__subtitulo {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    padding: 10px 0;
+    color: $preto;
+    letter-spacing: -0.02em;
+  }
+
+  &__texto {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $cinza;
+  }
+
+  &__imagem {
+    padding: 2em 0;
   }
 }

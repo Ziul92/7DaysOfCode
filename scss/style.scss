@@ -1,5 +1,6 @@
 $vermelho: #8E2424;
 $cinza: #667085;
+$preto: #101828;
 $tipoDeFonte: Arial, Helvetica, sans-serif;
 
 @mixin flex($espaço) {
@@ -80,7 +81,7 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
     font-size: 48px;
     font-weight: 600;
     line-height: 60px;
-    color: #101828;
+    color: $preto;
   }
 
   &__texto {
@@ -90,5 +91,40 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
     color: $cinza;
     text-align: center;
     width: 50%;
+  }
+}
+
+.resultados {
+  @include flex(space-between);
+  font-family: $tipoDeFonte;
+  padding-left: 70px;
+
+  &__caixa {
+
+
+
+    &--titulo {
+      font-size: 60px;
+      color: $vermelho;
+      line-height: 72px;
+      font-weight: 600;
+      width: 280px;
+    }
+
+    &--subtitulo {
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 500;
+      color: $preto;
+      width: 280px;
+    }
+
+    &--texto {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: $cinza;
+      width: 280px;
+    }
   }
 }

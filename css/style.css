@@ -78,4 +78,33 @@
   width: 50%;
 }
 
+.resultados {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 70px;
+}
+.resultados__caixa--titulo {
+  font-size: 60px;
+  color: #8E2424;
+  line-height: 72px;
+  font-weight: 600;
+  width: 280px;
+}
+.resultados__caixa--subtitulo {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #101828;
+  width: 280px;
+}
+.resultados__caixa--texto {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #667085;
+  width: 280px;
+}
+
 /*# sourceMappingURL=style.css.map */

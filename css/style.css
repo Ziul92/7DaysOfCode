@@ -14,10 +14,10 @@
   padding-right: 5px;
 }
 .navegacao__logo--titulo {
-  color: #3A404E;
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
+  color: #3A404E;
 }
 .navegacao__link {
   display: flex;
@@ -25,10 +25,10 @@
   align-items: center;
 }
 .navegacao__link--lista {
+  font-size: 16px;
   text-decoration: none;
   color: #667085;
   padding: 0 10px;
-  font-size: 16px;
 }
 .navegacao__botoes {
   display: flex;
@@ -36,8 +36,8 @@
   align-items: center;
 }
 .navegacao__botoes--entrar {
-  text-decoration: none;
   font-size: 16px;
+  text-decoration: none;
   color: #667085;
   padding-right: 10px;
 }
@@ -61,6 +61,7 @@
 .cabecalho__sobre {
   font-size: 16px;
   font-weight: 600;
+  line-height: 24px;
   color: #8E2424;
 }
 .cabecalho__titulo {
@@ -71,8 +72,8 @@
 }
 .cabecalho__texto {
   font-size: 20px;
-  line-height: 30px;
   font-weight: 400;
+  line-height: 30px;
   color: #667085;
   text-align: center;
   width: 50%;
@@ -88,22 +89,22 @@
 }
 .resultados__caixa--titulo {
   font-size: 60px;
-  color: #8E2424;
-  line-height: 72px;
   font-weight: 600;
+  line-height: 72px;
+  color: #8E2424;
   width: 280px;
 }
 .resultados__caixa--subtitulo {
   font-size: 18px;
-  line-height: 28px;
   font-weight: 500;
+  line-height: 28px;
   color: #101828;
   width: 280px;
 }
 .resultados__caixa--texto {
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
+  line-height: 24px;
   color: #667085;
   width: 280px;
 }
@@ -135,8 +136,8 @@
 }
 .vagas__texto {
   font-size: 20px;
-  line-height: 30px;
   font-weight: 400;
+  line-height: 30px;
   color: #667085;
 }
 .vagas__imagem {

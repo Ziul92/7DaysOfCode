@@ -9,6 +9,12 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
   align-items: center;
 }
 
+@mixin texto($size, $weight, $height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
+
 
 
 .navegacao {
@@ -25,10 +31,8 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
       }
 
       &--titulo {
+        @include texto(18px,500,24px);
         color: #3A404E;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 24px;
       }
     }
 
@@ -36,10 +40,10 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
       @include flex(center);
 
       &--lista {
+        font-size: 16px;
         text-decoration: none;
         color: $cinza;
         padding: 0 10px;
-        font-size: 16px;
       }
     }
 
@@ -47,8 +51,8 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
       @include flex(space-between);
 
       &--entrar {
-        text-decoration: none;
         font-size: 16px;
+        text-decoration: none;
         color: $cinza;
         padding-right: 10px;
       }
@@ -73,22 +77,17 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
 
 
   &__sobre {
-    font-size: 16px;
-    font-weight: 600;
+    @include texto(16px,600,24px);
     color: $vermelho;
   }
 
   &__titulo {
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 60px;
+    @include texto(48px,600,60px);
     color: $preto;
   }
 
   &__texto {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 400;
+    @include texto(20px,400,30px);
     color: $cinza;
     text-align: center;
     width: 50%;
@@ -105,25 +104,19 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
 
 
     &--titulo {
-      font-size: 60px;
+      @include texto(60px,600,72px);
       color: $vermelho;
-      line-height: 72px;
-      font-weight: 600;
       width: 280px;
     }
 
     &--subtitulo {
-      font-size: 18px;
-      line-height: 28px;
-      font-weight: 500;
+      @include texto(18px,500,28px);
       color: $preto;
       width: 280px;
     }
 
     &--texto {
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: 400;
+      @include texto(16px,400,24px);
       color: $cinza;
       width: 280px;
     }
@@ -137,9 +130,7 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
   padding: 2em 0 0 0;
 
   &__titulo {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
+    @include texto(14px,500,20px);
     padding: 4px 12px;
     color: $vermelho;
     background-color: rgba(142, 36, 36, 0.05);
@@ -147,18 +138,14 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
   }
 
   &__subtitulo {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 44px;
+    @include texto(36px,600,44px);
     padding: 10px 0;
     color: $preto;
     letter-spacing: -0.02em;
   }
 
   &__texto {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 400;
+    @include texto(20px,400,30px);
     color: $cinza;
   }
 

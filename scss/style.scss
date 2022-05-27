@@ -153,3 +153,38 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
     padding: 2em 0;
   }
 }
+
+.salario {
+  @include flex(center);
+  flex-direction: column;
+  font-family: $tipoDeFonte;
+
+  &__caixa {
+
+    &--titulo {
+      @include texto(20px,500,30px);
+      color: $preto;
+      margin: 20px 0;
+    }
+
+    &--vaga {
+      padding: 24px 24px;
+      border: 1px solid #EAECF0;
+      border-radius: 16px;
+      width: 700px;
+      margin: 24px 0;
+  
+      &--subtitulo {
+        @include texto(18px,500,28px);
+        color: $preto;
+        padding-bottom: 30px;
+      }
+  
+      &--texto {
+        @include texto(16px,500,24px);
+        color: $cinza;
+      }
+    }
+
+  }
+}

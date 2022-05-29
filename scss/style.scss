@@ -15,12 +15,21 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
   line-height: $height;
 }
 
+@mixin botao--cadastrar {
+  padding: 10px 18px;
+  border-radius: 8px;
+  background-color: $vermelho;
+  color: #FFFFFF;
+  border: 1px $vermelho solid;
+}
+
 
 
 .navegacao {
-  @include flex(space-around);
+  @include flex(space-between);
   height: 80px;
   font-family: $tipoDeFonte;
+  margin: 0 2em;
 
 
     &__logo {
@@ -58,11 +67,7 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
       }
 
       &--cadastrar {
-        padding: 10px 18px;
-        border-radius: 8px;
-        background-color: $vermelho;
-        color: #FFFFFF;
-        border: 1px $vermelho solid;
+        @include botao--cadastrar()
       }
     }
 
@@ -229,4 +234,48 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
     color: $cinza;
     padding-bottom: 3em;
   }
+}
+
+.rodape {
+  @include flex(center);
+  flex-direction: column;
+  background-color: #F9FAFB;
+  font-family: $tipoDeFonte;
+  margin-top: 4em;
+
+  &__titulo {
+    @include texto(36px,600,44px);
+    color: $preto;
+    letter-spacing: -0.02em;
+    margin-top: 2em;
+  }
+
+  &__texto {
+    @include texto(20px,400,30px);
+    color: $cinza;
+    margin: 1em 0
+  }
+
+  &__input {
+    padding: 12px 14px 12px 16px;
+    font-size: 16px;
+    color: $cinza;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px rgba(16, 24,40,0.05);
+    width: 300px;
+    margin-right: 10px;
+  }
+
+  &__botao {
+    @include botao--cadastrar();
+  }
+
+  &__direitos {
+    @include texto(16px,400,24px);
+    color: #98A2B3;
+    margin: 1em 0 4em 0;
+  }
+
+
 }

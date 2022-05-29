@@ -179,4 +179,49 @@
   color: #667085;
 }
 
+.depoimentos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(196, 25, 25, 0.03);
+  margin: 2em;
+}
+.depoimentos__titulo {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #8E2424;
+  padding: 3em 0 1em 0;
+}
+.depoimentos__texto {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 44px;
+  width: 90%;
+  color: #101828;
+  letter-spacing: -0.02em;
+  text-align: center;
+  padding: 0 0 1em 0;
+}
+.depoimentos__imagem {
+  padding-bottom: 1em;
+}
+.depoimentos__nome {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #101828;
+  padding-bottom: 0.5em;
+}
+.depoimentos__profissao {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #667085;
+  padding-bottom: 3em;
+}
+
 /*# sourceMappingURL=style.css.map */

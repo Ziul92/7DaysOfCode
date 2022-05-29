@@ -188,3 +188,45 @@ $tipoDeFonte: Arial, Helvetica, sans-serif;
 
   }
 }
+
+
+.depoimentos {
+  @include flex(center);
+  flex-direction: column;
+  text-align: center;
+  font-family: $tipoDeFonte;
+  background-color: rgba(196, 25, 25, 0.03);
+  margin: 2em;
+  
+
+  &__titulo {
+    @include texto(14px,600,20px);
+    color: $vermelho;
+    padding: 3em 0 1em 0;
+  }
+
+  &__texto {
+    @include texto(36px,500,44px);
+    width: 90%;
+    color: $preto;
+    letter-spacing: -0.02em;
+    text-align: center;
+    padding: 0 0 1em 0;
+  }
+
+  &__imagem {
+    padding-bottom: 1em;
+  }
+
+  &__nome {
+    @include texto(16px,500,24px);
+    color: $preto;
+    padding-bottom: 0.5em;
+  }
+
+  &__profissao {
+    @include texto(14px,400,20px);
+    color: $cinza;
+    padding-bottom: 3em;
+  }
+}
